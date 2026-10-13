@@ -1,5 +1,8 @@
 manifest: ./lzc-manifest.yml
 
+# buildscript: 构建 Vue/Vite 站点（selfhost 模式 base=/）并预渲染出 dist/
+buildscript: ./build.sh
+
 # contentdir: 指定打包的内容，将会打包到 lpk 中（build.sh 构建出的 dist/）
 contentdir: ./dist
 
