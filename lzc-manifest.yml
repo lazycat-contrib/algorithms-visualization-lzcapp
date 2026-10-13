@@ -1,0 +1,10 @@
+application:
+  subdomain: algorithms-visualization
+  multi_instance: false
+  # 纯静态站点：build.sh 预渲染出的 190 个页面随包发布，由微服直接从包内容读取。
+  # 懒猫的 file:// 后端是静态文件服务、没有 SPA 回退，所以必须用预渲染产物。
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: file:///lzcapp/pkg/content/

@@ -1,0 +1,18 @@
+package: cloud.lazycat.app.algorithmsvisualization
+version: 1.0.0
+name: 算法可视化
+description: "Step-through animations for 92 data structures & algorithms — 77 algorithm pages replay step by step with TypeScript / Python / Go / Rust code highlighted line by line, plus 15 interactive structure demos. Bilingual (zh/en). MIT."
+min_os_version: 1.5.0
+homepage: https://github.com/IllegalCreed/algorithms-visualization
+author: IllegalCreed
+license: MIT
+locales:
+  zh:
+    name: "算法可视化"
+    description: "92 个数据结构与算法的逐步动画：77 个算法页可单步回放，并与 TypeScript / Python / Go / Rust 代码逐行同步高亮；另有 15 个基础数据结构页可直接操作。中英双语。"
+  zh_CN:
+    name: "算法可视化"
+    description: "92 个数据结构与算法的逐步动画：77 个算法页可单步回放，并与 TypeScript / Python / Go / Rust 代码逐行同步高亮；另有 15 个基础数据结构页可直接操作。中英双语。"
+  en:
+    name: "Algorithm Visualizer"
+    description: "Step-through animations for 92 data structures & algorithms: 77 algorithm pages replay step by step with TypeScript / Python / Go / Rust code highlighted line by line, plus 15 interactive structure demos. Bilingual."

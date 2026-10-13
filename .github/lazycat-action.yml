@@ -1,0 +1,30 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: .lazycat-build/algorithms-visualization.lpk
+  target_arch: amd64
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  # 纯静态站点，没有容器镜像：版本来自本仓库的 package.yml / tag
+  version_source:
+    type: git
+
+build:
+  toolchains:
+    - kind: node
+      version: 22.x
+  run_buildscript: true
+
+stores:
+  official:
+    enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: 算法可视化
+    summary: "92 个数据结构与算法的逐步动画 + 四语言代码逐行高亮，中英双语纯静态站点。"

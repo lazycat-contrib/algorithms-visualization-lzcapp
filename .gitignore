@@ -1,0 +1,4 @@
+dist/
+.lazycat-build/
+*.lpk
+.DS_Store
